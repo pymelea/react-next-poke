@@ -15,7 +15,7 @@ export default function Pokemones({pokemones}) {
     console.log(pokemones)
     return (
         <div>
-            <p> Mi App de Pokemones </p>
+            <p data-testid='titulo'> Mi App de Pokemones </p>   // la propiedad data-testid es para poder hacele pruebas al id del componente
             <ul>
                 {pokemones.map(pokemon =>  <Pokemon pokemon={pokemon} key={pokemon.name}/>)}
             </ul>
